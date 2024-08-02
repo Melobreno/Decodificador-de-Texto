@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.mainContent {
+  display: flex;
+  padding: 1.5rem 20%;
+  justify-content: space-between;
+}
+
+.imgLupa {
+  width: 120px;
+  margin-left: 84px;
+  padding: 20px 0;
+}
+
+.sectionInput {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: antiquewhite;
+  height: 670px;
+  width: 680px;
+  padding: 20px;
+}
+
+.bottomSec {
+  display: flex;
+  flex-direction: column;
+}
+
+.warnDiv {
+  display: flex;
+  flex-direction: columnl;
+  bottom: 0;
+}
+
+.containerInfo {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
