@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Decodificador de código</title>
 </head>
 
 <body>
-    <img src="../assets//lupaVetor.svg" alt="lupaLogo" class="imgLupa">
+    <div class="imgHeader">
+        <img src="../assets//lupaVetor.svg" alt="lupaLogo" class="imgLupa">
 
+    </div>
     <main class="mainContent">
 
         <section class="sectionInput">
@@ -30,8 +37,8 @@
                         <span>Apenas letras minúsculas e sem acento.</span>
                     </div>
                     <div class="buttons">
-                        <button>Criptografar</button>
-                        <button>Descriptografar</button>
+                        <button class="btnCript">Criptografar</button>
+                        <button class="btnDescrip">Descriptografar</button>
                     </div>
                 </div>
 
@@ -39,7 +46,7 @@
         </section>
         <section class="sectionResult">
             <div class="containerResult">
-                <!-- <img src="../assets/programerPerson.svg" alt="Programer Person"> -->
+                <img src="../assets/programerPerson.svg" alt="Programer Person">
                 <div class="containerSemMsg">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p>Digite um texto que você deseja criptografar ou descriptografar</p>
@@ -52,11 +59,34 @@
                         </h4>
                     </div>
                 </div>
-                <div><Button class="btnCopy">Copiar</Button></div>
+                <div class="divCopy"><Button class="btnCopy">Copiar</Button></div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footerSec">
+        <div class="containerFooter">
+            <div class="imgLogo">
+                <img src="../assets/logoBreno.png" alt="Imagem com o nome Breno Melo como Logo">
+            </div>
+            <p>Todos os direitos reservados</p>
+
+            <div class="containerContatos">
+                <p>Onde me encontrar ?</p>
+                <div class="linkedin">
+                    <img src="../assets/LinkedIn.svg" alt="logo LinkedIn">
+                    <span>
+                        <a href="https://www.linkedin.com/in/melobreno/">Linkedin.com/meloBreno</a>
+                    </span>
+                </div>
+                <div class="gitHub">
+                    <img src="../assets/Github.svg" alt="logo GitHub">
+                    <span>
+                        <a href="https://github.com/Melobreno">GitHub.com/Melobreno</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

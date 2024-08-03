@@ -6,25 +6,54 @@
 
 body {
   background-color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .mainContent {
   display: flex;
-  padding: 1.5rem 20%;
+  padding: 1.5rem 20% 0;
   justify-content: space-between;
+}
+
+.imgHeader {
+  display: flex;
+  padding: 1.3rem 20% 0;
 }
 
 .imgLupa {
   width: 120px;
-  margin-left: 84px;
-  padding: 20px 0;
+}
+
+.containerInput {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  padding: 0 20%;
+}
+
+.containerInput input {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  width: 380px;
+  border: none;
+  font-size: 26px;
+  color: #3a3434;
+  outline: none;
+}
+
+.containerInput input::placeholder {
+  font-family: "Ubuntu", sans-serif;
+  color: #616e7d;
+  font-size: 26px;
 }
 
 .sectionInput {
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: antiquewhite;
   height: 670px;
   width: 680px;
   padding: 20px;
@@ -37,7 +66,9 @@ body {
 
 .warnDiv {
   display: flex;
-  flex-direction: columnl;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   bottom: 0;
 }
 
@@ -48,4 +79,108 @@ body {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button {
+  transition: all 100ms ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.footerSec {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.containerFooter {
+  display: flex;
+  padding: 1.3rem 20%;
+  justify-content: space-between;
+  align-self: center;
+  align-items: flex-end;
+}
+
+.containerContatos img {
+  width: 20px;
+}
+
+.containerContatos a {
+  color: #3a3434;
+}
+
+.containerContatos .gitHub {
+  display: flex;
+  gap: 5px;
+}
+
+.containerContatos p {
+  padding-bottom: 2px;
+}
+
+.containerContatos .linkedin {
+  display: flex;
+  gap: 5px;
+}
+
+.containerFooter p {
+}
+
+.imgLogo {
+  max-width: fit-content;
+}
+
+.imgLogo img {
+  width: 120px;
+}
+
+.containerInfo button {
+  font-size: 16px;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btnCript {
+  background-color: #616e7d;
+}
+
+.btnDescrip {
+  background-color: #82bfab;
+}
+
+.sectionResult {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #8ca3bd;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.sectionResult img {
+  width: 330px;
+}
+
+.sectionResult .divCopy {
+  display: none;
 }
