@@ -53,6 +53,7 @@ function Descodificar() {
     btnCopy.style.display = "block";
     sectionR.style.justifyContent = "start";
     sectionR.style.alignItems = "start";
+    containerRes.style.display = "block";
     containerRes.setAttribute("forCopy", resultadoDescrip);
   }
 }
