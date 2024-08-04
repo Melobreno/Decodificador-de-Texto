@@ -20,8 +20,15 @@ body {
   padding: 1.3rem 20% 0;
 }
 
+.imgHeader span {
+  display: flex;
+  align-items: center;
+  color: #616e7d;
+  font-weight: 500;
+}
+
 .imgLupa {
-  width: 120px;
+  width: 90px;
 }
 
 .containerInput {
@@ -46,13 +53,18 @@ body {
 
 #containerRes {
   display: none;
-  width: 437px;
-  height: 300px;
+  width: 27.313em;
+  max-width: 27.313em;
+  height: 25em;
+  max-height: 35em;
   background-color: beige;
   color: #3a3434;
   text-align: start;
   padding: 10px;
   border-radius: 10px;
+  white-space: normal;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .containerInput input::placeholder {
@@ -210,4 +222,21 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .mainContent {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .containerFooter {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainContent {
+    padding: 1rem 10%;
+  }
 }

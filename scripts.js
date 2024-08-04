@@ -7,7 +7,7 @@ let isValid;
 let textoOk;
 
 function isText() {
-  const regex = /^[a-zA-Z0-9\s]$/;
+  const regex = /^[a-zA-Z0-9\s]*$/;
   textoOk = inputTexto.value;
   if (regex.test(textoOk)) {
     isValid = true;
