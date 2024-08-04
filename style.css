@@ -240,3 +240,16 @@ body {
     padding: 1rem 10%;
   }
 }
+
+@media (max-width: 710px) {
+  .mainContent {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionResult {
+    height: 500px;
+  }
+}
