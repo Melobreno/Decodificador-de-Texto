@@ -21,11 +21,10 @@
 
     </div>
     <main class="mainContent">
-
         <section class="sectionInput">
             <div class="containerInput">
                 <label for="">
-                    <input type="text" placeholder="Digite seu Texto">
+                    <input type="text" placeholder="Digite seu Texto" id="inputMsg">
                 </label>
             </div>
             <div class="bottomSec">
@@ -37,8 +36,8 @@
                         <span>Apenas letras minúsculas e sem acento.</span>
                     </div>
                     <div class="buttons">
-                        <button class="btnCript">Criptografar</button>
-                        <button class="btnDescrip">Descriptografar</button>
+                        <button class="btnCript" onclick="Codificar()">Criptografar</button>
+                        <button class="btnDescrip" onclick="Descodificar()">Descriptografar</button>
                     </div>
                 </div>
 
@@ -46,22 +45,22 @@
         </section>
         <section class="sectionResult">
             <div class="containerResult">
-                <img src="../assets/programerPerson.svg" alt="Programer Person">
-                <div class="containerSemMsg">
+                <div id="divDesap">
+                    <img src="../assets/programerPerson.svg" alt="Programer Person">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-                </div>
 
+                </div>
                 <div class="containerComMsg">
-                    <div class="containerMsg">
-                        <h4>
-                            Isso aqui será o resultado da mensagem.
-                        </h4>
+                    <div id="containerRes">
+                        <p>Teste</p>
                     </div>
                 </div>
-                <div class="divCopy"><Button class="btnCopy">Copiar</Button></div>
+                <div class="divCopy"><Button class="btnCopy" onclick="Copy()">Copiar</Button></div>
             </div>
         </section>
+
+
     </main>
     <footer class="footerSec">
         <div class="containerFooter">
@@ -87,6 +86,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts.js"></script>
 </body>
 
 </html>
